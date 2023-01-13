@@ -62,6 +62,32 @@ footer {
     padding: 1em;
 }
 
+/* LAYOUT */ 
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 3em 1em;
+}
+
+/*SIDEBAR/ASIDE */
+aside {
+    padding: 2em 0;
+}
+@media (min-width: 768px) {
+    .two-col-sidebar {
+        display: grid;
+        grid-template-columns: 20em auto;
+    }
+    .two-col-sidebar aside {
+        border-right: 1px solid rgba(0,0,0, 0.1);
+        margin: 0 3em 2em 0;
+        padding: .3em 2em 0 0;
+    }
+}
+
 /* SOCIAL NAV */
 .social-nav ul {
     display: flex;
@@ -113,6 +139,30 @@ footer {
 .courses h3 {
     text-align: center;
 }
+
+/* STYLING FOR SUB PAGES */
+.page-sub .hero {
+    background-color: rgba(149, 113, 255, 0.486);
+    color: rgba(250, 247, 247, 0.8);
+}
+
+/* COURSE WORK SECTION */
+.coursework {
+    padding: 3em 1em;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project {
+    margin: 2em;
+}
+
+
+
+
+
+
 
 
 
