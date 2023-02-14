@@ -309,7 +309,7 @@ body.demo:before {
     }
 }
 
-/* STYLING FOR BITH HEADER AND FOOTER */
+/* STYLING FOR BOTH HEADER AND FOOTER */
 .site-header a,
 .site-footer a {
     color: rgba(0,0,0,1);
@@ -360,7 +360,13 @@ section {
     text-align: center;
 }
 
-.hero h1, p {
+.hero h1 {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero p {
     max-width: 500px;
     margin-left: auto;
     margin-right: auto;
@@ -456,6 +462,12 @@ article p + h5,
 article p + h6 {
     margin-top: 1em;
 }
+
+.date {
+    max-width:500px;
+    margin-left: auto;
+    margin-right: auto;
+} 
 
 
 /* FORMS */
