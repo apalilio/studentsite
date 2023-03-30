@@ -382,7 +382,7 @@ section {
        text-align: right;
     }
     .toggle-nav .site-nav .menu-button {
-        display: block;
+        font-size: inherit;
         display: inline-block;
         cursor: pointer;
         padding: .3em .8em;
@@ -429,7 +429,7 @@ section {
     
 }
 
-    /* SUB PAGES */
+    /* SUB PAGES: ARTICLES */
 article {
     max-width: 600px;
     margin-left: auto;
@@ -477,7 +477,10 @@ form {
     margin: 2em auto;
 }
 
-form label,
+form label {
+    display: block;
+}
+
 form input,
 form textarea {
     box-sizing: border-box;
@@ -507,3 +510,5 @@ form input[type="submit"] {
     width: auto;
     margin-top: 1.5em;
 }
+
+/* CARDS */
