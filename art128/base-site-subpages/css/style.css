@@ -110,6 +110,10 @@ a:hover {
     text-align: center;
 }
 
+.text-right {
+    text-align: center;
+}
+
 .full-width {
     max-width: none;
     width: 100%;
@@ -118,6 +122,19 @@ a:hover {
 .horiz-center {
     margin-left: auto;
     margin-right: auto;
+}
+
+.hide-visually {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+@media (min-width:768px) {
+    .hide-on-largescreens {
+        top: -9999px;
+        left: -9999;
+    }
 }
 
 /* IMAGES */
@@ -143,8 +160,8 @@ button, form input[type="submit"] {
 }
 
 .button:hover,
-button:hover,
-form input[type="submit"]:hover {
+button:hover
+ /* form input[type="submit"]:hover */ {
     background-color: rgba(0,0,153,1);
     border-color: rgba(0,0,153,1); 
     color: rgba(255,255,255,1);
@@ -234,7 +251,7 @@ body.demo:before {
 /* SEMANTIC GRID SYSTEM */
 
     .row > .column {
-    margin-bottom: 2%;
+    margin-bottom: 4%;
 }
 
 @media (min-width: 768px) {
@@ -242,8 +259,14 @@ body.demo:before {
     .row {
         display: flex;
         justify-content:space-between;
-        margin-left: -2%;
-        margin-right: -2%;
+        /* margin-left: -2%;
+        margin-right: -2%; */
+    }
+    .row > .column:first-child {
+        margin-left: 0;
+    }
+    .row > .column:last-child {
+        margin-right: 0;
     }
 
     .row > .column {
@@ -268,17 +291,17 @@ body.demo:before {
         max-width:62.6666%
     } 
 
-    .row > .column.three-fourth {
+   /* .row > .column.three-fourth {
         max-width:71%
-    }
+    } */
          
-    .row > .column.push-one-third {
+   /* .row > .column.push-one-third {
         margin-left: 35.3333%
-    }
+    } */
 
-    .row > .column.push-one-fourth {
+    /* .row > .column.push-one-fourth {
         margin-left: 27%;
-    }
+    } */
 
     .row > .column.centered {
         margin-left: auto;
@@ -374,7 +397,7 @@ section {
 
 /* TOGGLE NAV*/ 
 
-@media (max-width:768px) {
+@media (max-width:767px) {
     .toggle-nav .site-id {
         position: absolute;
     }
@@ -383,6 +406,8 @@ section {
     }
     .toggle-nav .site-nav .menu-button {
         font-size: inherit;
+        background-color: transparent;
+        border: none;
         display: inline-block;
         cursor: pointer;
         padding: .3em .8em;
@@ -431,9 +456,9 @@ section {
 
     /* SUB PAGES: ARTICLES */
 article {
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 38em;
+    margin: 0 auto 8em auto;
+    padding: 2em 0;
 }
 article h1 {
     text-align: center;
@@ -512,3 +537,8 @@ form input[type="submit"] {
 }
 
 /* CARDS */
+.card {
+    background: #ccc;
+    padding: 1em 2em;
+    border-radius: 1em;
+}
