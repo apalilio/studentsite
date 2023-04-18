@@ -32,7 +32,7 @@
 /* TYPOGRAPHY */
 body {
     font-size: 87.5%; /* 14px  */
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: minion-pro, helvetica, sans-serif; 
     line-height: 1.5;
     color: rgba(0,0,0,.8)
 }
@@ -47,8 +47,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 3em; /* 48px*/
+    font-size: 3.25em; /* 48px*/
     line-height: 1;
+    font-family: abril-display, serif;
+    font-style: italic;
 }
  
 h2 {
@@ -74,7 +76,11 @@ h5 {
 h6 {
     font-size: 1em; /* 16px*/
     line-height: 1.5;
+    font-family: abril-display, serif;
+    font-weight: 400;
+    font-style: normal;
 }
+
 
 /* PARAGRAPH */
 p {
@@ -97,7 +103,7 @@ em {
 
 /* LINKS */
 a {
-    color: rgba(0,0,153,.8);
+    color: rgba(255, 255, 255, 0.8);
     text-decoration: none;
 }
 a:hover {
@@ -131,7 +137,7 @@ img {
 button, form input[type="submit"] {
     font-size: inherit;
     line-height: 1;
-    background-color: rgba(0,0,255,1);
+    background-color: rgb(253, 253, 253);
     border: 1px solid rgba(0,0,255,1);
     color: rgba(255,255,255,1);
     padding: 1em;
@@ -324,10 +330,14 @@ body.demo:before {
 
 /* LOGO AREA */
 .site-id h1 {
-    font-size: 1.5em;
+    font-size: 3em;
     margin: 0;
     padding-top: 0.75em;
     text-align: center;
+}
+.site-id h6 {
+    font-size: 1em;
+    font-family: abril-display, serif;
 }
 
 /* SITE NAV */
@@ -357,7 +367,7 @@ section {
 /* HERO */
 .hero {
     padding: 6em 1em;
-    background-color: rgba(0,0,0,.1);
+    background-color: rgba(159, 211, 254, 0.809);
     text-align: center;
 }
 
@@ -391,7 +401,7 @@ section {
         border: 1px solid black;
     }
     .toggle-nav .site-nav .menu-button::selection {
-        background-color: rgba(255,255,255,0);
+        background-color: rgba(202, 24, 24, 0.631);
     }
     .toggle-nav .site-nav ul {
         display: block;
@@ -522,5 +532,7 @@ form input[type="submit"] {
     margin: 0.5em auto;
     border-bottom: 3px solid rgba(0,0,0,0.2);
 }
+
+
 
 
