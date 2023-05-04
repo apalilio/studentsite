@@ -66,6 +66,9 @@ h3 {
 h4 {
     font-size: 1.3125em; /* 21px*/
     line-height: 1.3;
+    font-family: minion-pro, serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 h5 {
@@ -237,7 +240,7 @@ body.demo:before {
     }
 }
   
-/* SEMANTIC GRID SYSTEM 
+/* SEMANTIC GRID SYSTEM */
 
     .row > .column {
     margin-bottom: 2%;
@@ -358,7 +361,7 @@ body.demo:before {
 }
 
 
-/* SECTIONS*/
+/* SECTIONS */
 section {
     padding: 3em 0;
 }
@@ -437,84 +440,6 @@ section {
         content: '\2715'
     }
     
-}
-
-    /* SUB PAGES 
-article {
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-}
-article h1 {
-    text-align: center;
-}
-article h1 + h2 {
-    text-align: center;
-    font-size: 1.5em;
-    line-height: 1.25em;
-    font-weight: normal;
-    margin-bottom: 1em;
-}
-article .date {
-    text-align: center;
-    font-size: 0.625em;
-    line-height: 0.625em;
-    color: #999;
-    font-weight: normal;
-}
-article .date + p {
-    margin-top: 2em;
-}
-article p + h2,
-article p + h3,
-article p + h4,
-article p + h5,
-article p + h6 {
-    margin-top: 1em;
-}
-
-.date {
-    max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* FORMS 
-
-form {
-    max-width:600px;
-    margin: 2em auto;
-}
-
-form label,
-form input,
-form textarea {
-    box-sizing: border-box;
-    display: block;
-    width: 100%;
-    font-size: 1em;
-}
-
-form label {
-    margin-top: 1em;
-    margin-bottom: 0.25em;
-}
-
-form input[type="text"],
-form textarea {
-    border: 1px solid #ccc;
-    padding: .5em;
-    color: #666
-}
-
-form textarea {
-    min-height: 10em;
-    line-height: 1.5;
-}
-
-form input[type="submit"] {
-    width: auto;
-    margin-top: 1.5em;
 }
 
 /* CUSTOM SITE CSS */
