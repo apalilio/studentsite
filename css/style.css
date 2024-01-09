@@ -124,26 +124,18 @@ aside {
     padding: 6em 1em;
 }
 
-.hero h2,
-.hero2 h2 {
+.hero h2 {
     font-size: 6em;
     line-height: 1;
     text-transform: uppercase;
     margin: 0 auto;
 }
 
-.hero p,
-.hero2 p {
+.hero p {
     max-width: 30em;
     margin: 1em auto;
 }
 
-.hero2 {
-    background-color: rgb(222, 15, 15);
-    color: rgba(250, 247, 247, 0.8);
-    text-align: center;
-    padding: 6em 1em;
-}
 
 /* COURSES SECTION */
 .courses {
