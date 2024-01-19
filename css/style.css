@@ -206,6 +206,23 @@ dd {
     margin: 0;
 }
 
+/* CARDS */
+
+.course .course {
+    display: flex;
+    justify-content: center;
+}
+
+/* command+  / comments comment tag */
+
+/* PROJECTS */
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+
 
 
 
