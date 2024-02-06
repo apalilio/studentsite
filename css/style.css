@@ -219,6 +219,20 @@ dd {
     margin: 0;
 }
 
+/* NOTES PAGE SCROLLBAR FIX FOR PRE & CODE */
+pre,
+code {
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+}
+
+/* NOTES PAGE SCROLLBAR FIX FOR GISTS */
+@media (min-width: 768px) and (max-width: 910px) {
+    .gist {
+        max-width: 450px;
+    }
+}
+
 /* CARDS */
 
 .course .course {
