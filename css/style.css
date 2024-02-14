@@ -199,6 +199,8 @@ pre code {
     padding: 1em 3em;
     margin-bottom: 1em;
     line-height: 1.5;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
 }
 
 .markup-box {
@@ -217,13 +219,6 @@ dt {
 
 dd {
     margin: 0;
-}
-
-/* NOTES PAGE SCROLLBAR FIX FOR PRE & CODE */
-pre,
-code {
-    overflow-wrap: break-word;
-    white-space: pre-wrap;
 }
 
 /* NOTES PAGE SCROLLBAR FIX FOR GISTS */
