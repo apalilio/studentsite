@@ -40,7 +40,7 @@ body {
     /* 14px */
     color: rgba(0, 0, 0, 0.7);
     margin: 0 auto;
-    background-color: #a9a9a9;
+    background-color: #fff;
     min-height: 100vh;
 }
 
@@ -221,7 +221,7 @@ main {
 
 section {
     padding: 2em;
-    min-height: 90vh;
+    /* min-height: 90vh; */
     display: grid;
     align-items: center;
     justify-content: center;
@@ -236,16 +236,33 @@ section {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        max-width: 1200px;
+        /* max-width: 1200px; */
         margin: 0 auto;
     }
 
-    .featuredproject.swapped {
+    .featuredproject.swapped.typebook {
         flex-direction: row-reverse;
+        background: rgb(255, 255, 255);
+        background: linear-gradient(90deg, rgba(255, 255, 255, 1) 50%, rgba(46, 57, 82, 1) 50%);
     }
 
     .featuredproject .image-wrapper {
         width: 49%;
+        margin-top: 4em;
+        margin-bottom: 4em;
+        background-color: rgba(0, 0, 0, .5);
+        text-align: right;
+    }
+
+    .featuredproject .image-wrapper.overlap {
+        border: 2px solid red;
+        transform: translateX(8%);
+    }
+
+    .featuredproject.swapped .image-wrapper.overlap {
+        border: 2px solid blue;
+        transform: translateX(-8%);
+        text-align: left;
     }
 
     .featuredproject .text-wrapper {
@@ -255,7 +272,15 @@ section {
 
 }
 
+.featuredproject.krishna {
+    background: rgb(40, 183, 190);
+    background: linear-gradient(90deg, rgba(40, 183, 190, 1) 0%, rgba(40, 183, 190, 1) 50%, rgba(255, 255, 255, 1) 50%);
+}
 
+.bookcovers {
+    background: rgb(247, 185, 128);
+    background: linear-gradient(90deg, rgba(247, 185, 128, 1) 50%, rgba(255, 255, 255, 1) 50%);
+}
 
 /* SUB PAGE: PROJECT DETAIL PAGES */
 
