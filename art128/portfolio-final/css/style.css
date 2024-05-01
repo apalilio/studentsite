@@ -448,3 +448,9 @@ section {
     opacity: 1;
     transform: translateY(0);
 }
+
+/* TO CHANGE IMAGE CONTAINER SIZE */
+.swiper {
+    width: 60%;
+    height: auto;
+}
