@@ -250,18 +250,19 @@ section {
         width: 49%;
         margin-top: 4em;
         margin-bottom: 4em;
-        background-color: rgba(0, 0, 0, .5);
+        /* background-color: rgba(0, 0, 0, .5); */
         text-align: right;
+        padding-right: 2em;
     }
 
     .featuredproject .image-wrapper.overlap {
-        border: 2px solid red;
-        transform: translateX(8%);
+        /* border: 2px solid red; */
+        transform: translateX(10%);
     }
 
     .featuredproject.swapped .image-wrapper.overlap {
-        border: 2px solid blue;
-        transform: translateX(-8%);
+        /* border: 2px solid blue; */
+        transform: translateX(-10%);
         text-align: left;
     }
 
@@ -524,20 +525,21 @@ section {
     }
 }
 
+.one-half img {
+    padding: 4em;
+
+}
+
 /* TYPEBOOK COVER HERO SECTION */
 
 .typebook-cover {
     background-color: #091a3e;
 }
 
-.typebook-cover img{
+.typebook-cover img {
     width: 100%;
     height: auto;
     padding: 3em;
     /* padding-left: 30em; */
 
 }
-
-/* svg {
-     scale: 2em;
-} */
