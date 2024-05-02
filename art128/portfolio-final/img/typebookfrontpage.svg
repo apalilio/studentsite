@@ -1,116 +1,168 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 720">
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1500 1000">
   <defs>
     <style>
+      .cls-1 {
+        letter-spacing: 0em;
+      }
+
       .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9, .cls-10 {
         isolation: isolate;
       }
 
-      .cls-1, .cls-4 {
-        font-size: 95px;
-      }
-
-      .cls-1, .cls-4, .cls-5 {
-        font-family: MinionPro-Regular, 'Minion Pro';
-      }
-
-      .cls-1, .cls-4, .cls-6, .cls-8 {
-        fill: #fdf5a5;
-      }
-
-      .cls-11 {
-        letter-spacing: -.02em;
-      }
-
-      .cls-12 {
-        fill: #091a3e;
-        stroke-width: 0px;
-      }
-
-      .cls-2 {
-        letter-spacing: -.07em;
-      }
-
-      .cls-2, .cls-3 {
-        font-size: 20px;
-      }
-
-      .cls-2, .cls-3, .cls-7, .cls-10 {
+      .cls-1, .cls-3, .cls-6, .cls-7, .cls-10 {
         fill: #fff;
         font-family: AvenirNext-Regular, 'Avenir Next';
       }
 
-      .cls-4 {
-        letter-spacing: -.06em;
+      .cls-1, .cls-7, .cls-10 {
+        font-size: 45.8px;
+      }
+
+      .cls-2 {
+        letter-spacing: 0em;
+      }
+
+      .cls-2, .cls-4 {
+        font-size: 362.2px;
+      }
+
+      .cls-2, .cls-4, .cls-5 {
+        fill: #fdf5a5;
+      }
+
+      .cls-2, .cls-4, .cls-9 {
+        font-family: MinionPro-Regular, 'Minion Pro';
+      }
+
+      .cls-3 {
+        letter-spacing: 0em;
+      }
+
+      .cls-3, .cls-6 {
+        font-size: 76.3px;
       }
 
       .cls-5 {
-        fill: #fff8a1;
-        font-size: 95px;
-      }
-
-      .cls-6 {
-        font-family: MinionPro-CnIt, 'Minion Pro';
-        font-size: 50px;
-      }
-
-      .cls-6, .cls-8 {
+        font-family: MinionPro-ItCapt, 'Minion Pro';
+        font-size: 190.6px;
         font-style: italic;
       }
 
+      .cls-11 {
+        fill: #091a3e;
+        stroke-width: 0px;
+      }
+
       .cls-7 {
-        letter-spacing: -.03em;
+        letter-spacing: 0em;
       }
 
-      .cls-7, .cls-10 {
-        font-size: 12px;
+      .cls-9 {
+        fill: #fff8a1;
+        font-size: 362.2px;
       }
 
-      .cls-8 {
-        font-family: MinionPro-It, 'Minion Pro';
-        font-size: 51px;
+      .cls-12 {
+        display: none;
       }
     </style>
   </defs>
-  <rect class="cls-12" width="576" height="720"/>
-  <g class="cls-9">
-    <text class="cls-10" transform="translate(338.36 444.28)"><tspan x="0" y="0">by Emily G.</tspan><tspan class="cls-11" x="61.55" y="0">A</tspan></text>
-    <text class="cls-7" transform="translate(408.31 444.28)"><tspan x="0" y="0">.</tspan></text>
-    <text class="cls-10" transform="translate(411.07 444.28)"><tspan x="0" y="0" xml:space="preserve"> Moody &amp;</tspan></text>
-    <text class="cls-10" transform="translate(464.31 444.28)"><tspan x="0" y="0"> </tspan></text>
-    <text class="cls-10" transform="translate(467.11 444.28)"><tspan x="0" y="0">Angelica </tspan></text>
-    <text class="cls-10" transform="translate(518.36 444.28)"><tspan x="0" y="0">P</tspan></text>
-    <text class="cls-10" transform="translate(524.61 444.28)"><tspan x="0" y="0">alilio</tspan></text>
+  <g id="Layer_2" data-name="Layer 2" class="cls-12">
+    <rect class="cls-11" x="190.7" y="-199.4" width="1204.5" height="1443.9"/>
   </g>
-  <g class="cls-9">
-    <text class="cls-3" transform="translate(264.95 422.83)"><tspan x="0" y="0">An Ind</tspan></text>
-    <text class="cls-3" transform="translate(325.13 422.83)"><tspan x="0" y="0">r</tspan></text>
-    <text class="cls-3" transform="translate(331.99 422.83)"><tspan x="0" y="0">oduction to</tspan></text>
-    <text class="cls-3" transform="translate(437.31 422.83)"><tspan x="0" y="0"> </tspan></text>
-    <text class="cls-2" transform="translate(441.83 422.83)"><tspan x="0" y="0">T</tspan></text>
-    <text class="cls-3" transform="translate(451.33 422.83)"><tspan x="0" y="0">ypog</tspan></text>
-    <text class="cls-3" transform="translate(498.65 422.83)"><tspan x="0" y="0">r</tspan></text>
-    <text class="cls-3" transform="translate(505.63 422.83)"><tspan x="0" y="0">aphy</tspan></text>
-  </g>
-  <g class="cls-9">
-    <text class="cls-5" transform="translate(161.26 270.09)"><tspan x="0" y="0">D</tspan></text>
-    <text class="cls-5" transform="translate(231.65 270.09)"><tspan x="0" y="0">esi</tspan></text>
-    <text class="cls-5" transform="translate(332.35 270.09)"><tspan x="0" y="0">g</tspan></text>
-    <text class="cls-5" transform="translate(377.19 270.09)"><tspan x="0" y="0">ni</tspan></text>
-    <text class="cls-5" transform="translate(454.61 270.09)"><tspan x="0" y="0">n</tspan></text>
-    <text class="cls-5" transform="translate(505.82 270.09)"><tspan x="0" y="0">g </tspan></text>
-  </g>
-  <g class="cls-9">
-    <text class="cls-6" transform="translate(283.35 360)"><tspan x="0" y="0">w</tspan></text>
-    <text class="cls-6" transform="translate(315.55 360)"><tspan x="0" y="0">i</tspan></text>
-    <text class="cls-6" transform="translate(327.65 360)"><tspan x="0" y="0">t</tspan></text>
-    <text class="cls-6" transform="translate(341.45 360)"><tspan x="0" y="0">h</tspan></text>
-  </g>
-  <text class="cls-8" transform="translate(365 360)"><tspan x="0" y="0"> </tspan></text>
-  <g class="cls-9">
-    <text class="cls-4" transform="translate(362.9 362.81) rotate(1)"><tspan x="0" y="0">T</tspan></text>
-    <text class="cls-1" transform="translate(414.66 363.72) rotate(1)"><tspan x="0" y="0">y</tspan></text>
-    <text class="cls-1" transform="translate(458.27 364.48) rotate(1)"><tspan x="0" y="0">p</tspan></text>
-    <text class="cls-1" transform="translate(508.88 365.37) rotate(1)"><tspan x="0" y="0">e </tspan></text>
+  <g id="Layer_1" data-name="Layer 1">
+    <g class="cls-8">
+      <g class="cls-8">
+        <text class="cls-10" transform="translate(679.6 967.9)"><tspan x="0" y="0">by Emily G.</tspan></text>
+        <text class="cls-7" transform="translate(914.3 967.9)"><tspan x="0" y="0">A</tspan></text>
+      </g>
+      <g class="cls-8">
+        <text class="cls-1" transform="translate(946.3 967.9)"><tspan x="0" y="0">.</tspan></text>
+      </g>
+      <g class="cls-8">
+        <text class="cls-10" transform="translate(956.8 967.9)"><tspan x="0" y="0" xml:space="preserve"> Moody &amp;</tspan></text>
+      </g>
+      <g class="cls-8">
+        <text class="cls-10" transform="translate(1170.5 967.9)"><tspan x="0" y="0">Angelica</tspan></text>
+      </g>
+      <g class="cls-8">
+        <text class="cls-10" transform="translate(1365.9 967.9)"><tspan x="0" y="0">P</tspan></text>
+      </g>
+      <g class="cls-8">
+        <text class="cls-10" transform="translate(1389.8 967.9)"><tspan x="0" y="0">alilio</tspan></text>
+      </g>
+    </g>
+    <g class="cls-8">
+      <g class="cls-8">
+        <text class="cls-6" transform="translate(399.7 886.1)"><tspan x="0" y="0">An Ind</tspan></text>
+      </g>
+      <g class="cls-8">
+        <text class="cls-6" transform="translate(629.2 886.1)"><tspan x="0" y="0">r</tspan></text>
+      </g>
+      <g class="cls-8">
+        <text class="cls-6" transform="translate(655.3 886.1)"><tspan x="0" y="0">oduction to</tspan></text>
+      </g>
+      <g class="cls-8">
+        <text class="cls-3" transform="translate(1074.1 886.1)"><tspan x="0" y="0">T</tspan></text>
+      </g>
+      <g class="cls-8">
+        <text class="cls-6" transform="translate(1110.3 886.1)"><tspan x="0" y="0">ypog</tspan></text>
+      </g>
+      <g class="cls-8">
+        <text class="cls-6" transform="translate(1290.8 886.1)"><tspan x="0" y="0">r</tspan></text>
+      </g>
+      <g class="cls-8">
+        <text class="cls-6" transform="translate(1317.4 886.1)"><tspan x="0" y="0">aphy</tspan></text>
+      </g>
+    </g>
+    <g class="cls-8">
+      <g class="cls-8">
+        <text class="cls-9" transform="translate(4.3 303.8)"><tspan x="0" y="0">D</tspan></text>
+      </g>
+      <g class="cls-8">
+        <text class="cls-9" transform="translate(272.7 303.8)"><tspan x="0" y="0">esi</tspan></text>
+      </g>
+      <g class="cls-8">
+        <text class="cls-9" transform="translate(656.7 303.8)"><tspan x="0" y="0">g</tspan></text>
+      </g>
+      <g class="cls-8">
+        <text class="cls-9" transform="translate(827.7 303.8)"><tspan x="0" y="0">ni</tspan></text>
+      </g>
+      <g class="cls-8">
+        <text class="cls-9" transform="translate(1122.9 303.8)"><tspan x="0" y="0">n</tspan></text>
+      </g>
+      <g class="cls-8">
+        <text class="cls-9" transform="translate(1318.1 303.8)"><tspan x="0" y="0">g</tspan></text>
+      </g>
+    </g>
+    <g class="cls-8">
+      <g class="cls-8">
+        <text class="cls-5" transform="translate(469.8 646.6)"><tspan x="0" y="0">w</tspan></text>
+      </g>
+      <g class="cls-8">
+        <text class="cls-5" transform="translate(592.6 646.6)"><tspan x="0" y="0">i</tspan></text>
+      </g>
+      <g class="cls-8">
+        <text class="cls-5" transform="translate(638.8 646.6)"><tspan x="0" y="0">t</tspan></text>
+      </g>
+      <g class="cls-8">
+        <text class="cls-5" transform="translate(691.4 646.6)"><tspan x="0" y="0">h</tspan></text>
+      </g>
+    </g>
+    <g class="cls-8">
+      <g class="cls-8">
+        <text class="cls-2" transform="translate(773.2 657.3) rotate(1)"><tspan x="0" y="0">T</tspan></text>
+      </g>
+      <g class="cls-8">
+        <text class="cls-4" transform="translate(970.5 660.8) rotate(1)"><tspan x="0" y="0">y</tspan></text>
+      </g>
+      <g class="cls-8">
+        <text class="cls-4" transform="translate(1136.8 663.7) rotate(1)"><tspan x="0" y="0">p</tspan></text>
+      </g>
+      <g class="cls-8">
+        <text class="cls-4" transform="translate(1329.8 667.1) rotate(1)"><tspan x="0" y="0">e</tspan></text>
+      </g>
+    </g>
   </g>
 </svg>

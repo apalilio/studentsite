@@ -523,3 +523,21 @@ section {
         margin-right: auto;
     }
 }
+
+/* TYPEBOOK COVER HERO SECTION */
+
+.typebook-cover {
+    background-color: #091a3e;
+}
+
+.typebook-cover img{
+    width: 100%;
+    height: auto;
+    padding: 3em;
+    /* padding-left: 30em; */
+
+}
+
+/* svg {
+     scale: 2em;
+} */
