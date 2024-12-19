@@ -1,0 +1,1003 @@
+/* ----------------------------
+-------------------------------
+
+CSS TABLE OF CONTENTS 
+
+# GLOBAL STYLES
+    # GLOBAL VARIABLES
+    # GLOBAL RESETS
+    # GLOBAL COLORS
+    # GLOBAL TYPOGRAPHY
+    # GLOBAL MEDIA 
+    # GLOBAL HELPERS
+
+# LAYOUT
+    # MEDIA QUERIES / BREAKPOINTS ( RESPONSIVE TYPOGRAPHY ) 
+    # CONTAINER
+    # GRID
+
+# SITE STRUCTURE 
+    # HEADER
+        # LOGO
+        # SITE NAV
+            # TOGGLE MENU
+        # SITE-HEADER-ON-TOP-OF-HERO
+    # MAIN
+        # SECTION
+            # HERO
+    # FOOTER
+
+# UI COMPONETS
+    # BUTTONS
+    # CARDS
+
+
+# ANIMATION 
+    # SMOOTH SCROLLING 
+    # ONSCROLL TRIGGERED ANIMATION
+
+
+# CUSTOM STYLING 
+
+
+
+-------------------------------
+------------------------------*/
+
+
+/* ---------GLOBALS----------- */
+
+/* VARIABLES */
+:root {
+    /* DEFINE ALL COMMONLY USED COLORS HERE */
+
+    --color-body-background: rgb(255 255 255);
+    --color-text-body: rgba(0 0 0 / .8);
+    --color-text-headings: rgb(0 0 0 / 1);
+
+    /* --color-body-background: rgb(0, 0, 0);
+    --color-text-body: rgba(255, 255, 255 / .8);
+    --color-text-headings: rgb(255, 255, 255 / 1); */
+
+    --color-links: blue;
+    --color-links-hover: darkblue;
+    --color-links-dark: rgb(102 102 102);
+    --color-links-darker: rgb(0 0 0);
+    --color-links-light: rgb(204 204 204);
+    --color-links-lighter: rgb(255 255 255);
+
+    --color-siteheader-background: transparent;
+    --color-siteheader-links: var(--color-text-headings);
+
+    --color-hero-background: #EFE6DF;
+    --color-hero-text: rgba(0, 0, 0, 0.8);
+    --color-hero-headings: #966A6A;
+
+    --color-sitefooter-background: rgb(110, 110, 110);
+    --color-sitefooter-text: 0, 0, 0;
+    --color-sitefooter-headings: rgb( 255 255 255 / 1);
+    --color-sitefooter-links: rgb(255 255 255);
+
+
+
+
+    /* DEFINE ALL FONTS USED HERE */
+    --font-body: system-ui, Helvetica, Arial, sans-serif;
+    --font-headings: system-ui, Helvetica, Arial, sans-serif;
+
+    /* SIZING UNITS */
+    --container-width: 1200px;
+    --unit-small: 1em;
+    --unit-medium: 2em;
+    --unit-large: 4em;
+
+}
+
+/* GLOBAL RESETS */
+
+/* CHANGE BOX-SIZING FOR ALL TO BORDER_BOX */
+* {
+    box-sizing: border-box;
+}
+
+/* REMOVE THE DEFAULT 8px MARGIN ON THE BODY */
+body {
+    margin: 0;
+}
+
+/* GLOBAL COLORS */
+
+body {
+
+    /* SET THE COLOR OF THE MAIN BODY BACKGROUND */
+    background-color: var(--color-body-background);
+
+    /* SET THE COLOR OF THE MAIN BODY TEXT */
+    color: var(--color-text-body);
+
+}
+
+h1,
+h2,
+h3 {
+
+    /* SET THE COLOR OF ALL HEADINGS H1-etc */
+
+    color: var(--color-text-headings);
+
+}
+
+a {
+    /* SET THE COLOR OF ALL TEXT LINKS */
+    color: var(--color-links);
+
+    &:hover {
+        /* SET THE COLOR OF ALL HOVER STATES ON TEXT LINKS */
+        color: var(--color-links-hover);
+    }
+}
+
+/* GLOBAL TYPOGRAPHY */
+
+body {
+
+    /* SET THE FONT FOR ALL MAIN BODY TEXT */
+    font-family: var(--font-body);
+
+    /* SET THE LEADING (LINE-HEIGHT) FOR ALL BODY TEXT */
+    line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+
+    /* SET THE FONT AND MARGIN FOR ALL HEADINGS */
+    font-family: var(--font-headings);
+    margin: .4em 0;
+}
+
+h1 {
+
+    /* SET H1 FONT SIZE*/
+    font-size: 3em;
+
+    /* SET H1 LEADING*/
+    line-height: 1.1;
+}
+
+h2 {
+
+    /* SET H2 FONT SIZE*/
+    font-size: 2em;
+
+    /* SET H2 LEADING*/
+    line-height: 1.2;
+}
+
+h3 {
+
+    /* SET H3 FONT SIZE*/
+    font-size: 1.5em;
+
+    /* SET H3 LEADING*/
+    line-height: 1.3;
+}
+
+p {
+
+    /* LIMIT THE WIDTH OF ALL PARAGRAPHS */
+    max-width: 65ch;
+
+    /* NEW SCHOOL WIDOW SLAYER */
+    text-wrap: pretty;
+}
+
+/* GLOBAL MEDIA */
+
+img {
+
+    /* MAKE ALL IMAGES SHRINK ON SMALL SCREENS */
+    max-width: 100%;
+    height: auto;
+}
+
+/* GLOBAL HELPERS */
+
+/*  HIDE ELEMENTVISUALLY BUT NOT FROM SCREEN READERS AND SEARCH ENGINES  */
+.hide-visually {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+
+
+/* ---------LAYOUT----------- */
+
+
+/* RESPONSIVE TYPOGRAPHY VIA MEDIA QUARIES */
+
+/* SMALL SCREENS (MOBILE < 768px) */
+body {
+    /* SET THE DEFAULT FONT SIZE TO 14px */
+    font-size: 87.5%;
+}
+
+/* MEDIUM SCREENS (TABLETS < 1200px) */
+
+@media (min-width: 768px) {
+    body {
+        /* SET THE MEDIA SCREENS AND HIGHER FONT SIZE TO 16px */
+        font-size: 100%;
+    }
+}
+
+/* LARGE SCREENS (LAPTOPS &B DESKTOPS > 1200px) */
+
+@media (min-width: 1200px) {
+    body {
+        /* SET THE LARGE SCREENS AND HIGHER FONT SIZE TO 18px */
+        font-size: 112.5%;
+    }
+}
+
+/* CONTAINER */
+.container {
+    /* SET THE MAX WIDTH OF YOUR SITE (eg 1200px) */
+    max-width: var(--container-width);
+
+
+    /* CENTER THE CONTAINER HORIZONTALLY */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* GRID */
+
+.row {
+    --gridgap: 1em;
+}
+
+.row> * {
+    margin-top: var(--gridgap);
+    margin-bottom: var(--gridgap);
+}
+
+@media (min-width: 768px) {
+    .row {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: var(--gridgap);
+    }
+
+    /* COMMONLY USED COLUMN WIDTHS */
+    .one-half {grid-column: auto / span 6;}
+    .one-third {grid-column: auto / span 4;}
+    .two-thirds {grid-column: auto / span 8;}
+    .one-fourth {grid-column: auto / span 3;}
+    .three-fourths {grid-column: auto / span 9;}
+
+    /*  12 GRID COLUMN CLASSES */
+    .col-1 {grid-column: auto / span 1;}
+    .col-2 {grid-column: auto / span 2;}
+    .col-3 {grid-column: auto / span 3;}
+    .col-4 {grid-column: auto / span 4;}
+    .col-5 {grid-column: auto / span 5;}
+    .col-6 {grid-column: auto / span 6;}
+    .col-7 {grid-column: auto / span 7;}
+    .col-8 {grid-column: auto / span 8;}
+    .col-9 {grid-column: auto / span 9;}
+    .col-10 {grid-column: auto / span 10;}
+    .col-11 {grid-column: auto / span 11;}
+    .col-12 {grid-column: auto / span 12;}
+
+    /* CENTERED COLUMS */
+    .one-half.centered {grid-column: 4 / span 6;}
+    .one-third.centered {grid-column: 5 / span 4;}
+    .two-thirds.centered {grid-column: 3 / span 8;}
+
+    /* PUSHES */
+    .push-1 {grid-column-start: 2;}
+    .push-2 {grid-column-start: 3;}
+    .push-3 {grid-column-start: 4;}
+    .push-4 {grid-column-start: 5;}
+    .push-5 {grid-column-start: 6;}
+    .push-6 {grid-column-start: 7;}
+    .push-7 {grid-column-start: 8;}
+    .push-8 {grid-column-start: 9;}
+    .push-9 {grid-column-start: 10;}
+    .push-10 {grid-column-start: 11;}
+    .push-11 {grid-column-start: 12;}
+
+
+    /* SWAP (REVERSE) COLUMNS - WORKS ONLY w/ 2 CHILDREN */
+    .row.swapped>*:first-child {
+        order: 2;
+    }
+
+    .row.swapped>*:last-child {
+        order: 1;
+    }
+
+}
+
+/* FOR DEMO PURPOSES */
+
+.demo>* {
+    background-color: #444;
+    padding: 1em;
+    text-align: center;
+}
+
+
+/* ---------SITE STRUCTURE----------- */
+
+/* body {
+    display: grid;
+} */
+
+/* SITE HEADER */
+.site-header {
+    background-color: var(--color-siteheader-background);
+
+    /* PUT ALL HEADER CHILDREN SIDE-BY-SIDE ON LARGE SCREEN */
+    @media (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* ADD SOME GENERAL SPACING/PADDING AROUND THE HEADER */
+    padding: var(--unit-small);
+
+
+    /* when doing position absulote, always remember to add width */
+    /* width: 100%; */
+
+
+    /* REMOVE LINK UNDERLINE AND SET SITE LINK COLOR */
+    a {
+        text-decoration: none;
+    }
+
+
+
+    /* SITE LOGO */
+
+    .site-logo {
+
+        /* PUT SITE LOGO CHILDREN SIDE-BY-SIDE AND CENTER */
+        display: flex;
+        align-items: center;
+        justify-content: ceenter;
+        gap: 1em;
+        
+
+        /*  PLACE LOGO ON TGOP OF DRAWER MENU */
+        z-index: 100;
+
+        /* REMOVES MARGINS AND RESIZE H1 INSIDE HEADER */
+        h1 {
+            font-size: 2em;
+            margin: 0;
+            text-wrap: nowrap;
+        }
+
+    }
+
+    /* SITE NAV */
+
+    .site-header-nav {
+
+        /* REMOVE MARGINS & BULLETS FROM THE LIST */
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            }
+
+            /* DISPLAY CHILDREN SIDE-BY-SIDE ON LARGE SCREEN */
+            /* @media (min-width: 768px) {
+                display: flex;
+            } */
+
+            /*  MAKE SITE NAV LINKS BIG LIKE BUTTONS */
+            a {
+                display: block;
+                padding: 1em;
+            }
+    }
+}
+
+/* TOGGLE MENU */
+
+/* HIDE MENU BUTTON IF NOT USING TOGGLE NAV */
+.site-menu-button {
+    display: none;
+}
+
+.toggle-menu {
+
+    --color-togglemenu-background: rgb(226, 197, 255);
+    --color-togglemenu-text: rgb(255, 237, 222);
+
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+
+    /* SHOW MENU BUTTON IF USING TOGGLE NAV */
+    .site-menu-button {
+        display: block;
+        background-color: transparent;
+        border: 1px solid var(--color-siteheader-links);
+        color: var(--color-siteheader-links);
+        padding: .5em;
+        position: relative;
+        z-index: 100;
+
+        /* REST THE FONT SIZE */
+        font-size: inherit;
+
+        &:hover {
+            cursor: pointer;
+
+        }
+
+        /* ADD SUPPORT FOR NAVICON / HAMBURGER ICON */
+        &:has(svg) {
+
+            /* VERTICALLLY ALIGN THER MENU TEXT W ICON */
+            display: flex;
+            align-content: center;
+            gap: var(--unit-small);
+
+            /* REWMOVE BORDER */
+            border: none;
+
+            /* SET THE COLOR OF THE SVG TO MATCH */
+            svg {
+                fill: var(--color-siteheader-links);
+            }
+
+            /* ADD SUIPPORT TO SVG ANIMATION */
+            svg > * {
+                transition: all .2s ease-out;
+                transform-origin: center;
+            }
+        }
+
+    }
+                
+    .site-menu {
+
+        /* SET COLORS TO TOGGLE MENU COLORS */
+        background-color: var(--color-togglemenu-background);
+        color: var(--color-togglemenu-text);
+
+
+        position: fixed;
+        top: 0;
+        right: 0; 
+        width: 100%;
+        z-index: 50;
+        min-height: 100svh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 3vw;
+        transition: .4s all ease-out;
+        }          
+        
+
+    a {
+        color: var(--color-togglemmenu-text);
+        padding: 2vh 2vw;
+    }
+
+                
+    &[data-menustate="open"] {
+
+        /*  CHANGE COLORS TO TOGGLE MENU COLORS */
+        --color-siteheader-links: var(--color-togglemenu-tewxt);
+        
+        /* SET MENU BUTTON TO FIXED WHEN MENU IS OPEN */
+        .site-menu-button {
+            position: fixed;
+            z-index: 100;
+        }
+
+        /* SHOW THE SITE MENU WHEN OPEN */
+        .site-menu {
+        transform: translateX(0);
+        }
+
+        /* ANIMATE THE NAVICON / HAMBURTGER TO AN X */
+        .site-menu-button svg {
+
+            .simple-navicon-top {
+                rotate: 45deg;
+                translate: -21% 25%;
+            }
+
+            .simple-navicon-middle {
+                opacity: 0;
+            }
+
+            .simple-navicon-bottom {
+                rotate: -45deg;
+                translate: -21% -25%
+            }
+        }
+    }
+
+    &[data-menustate="closed"] {
+
+        /* MOVE THE SIDE MENU TO THE RIGHT WHEN CLOSED */
+        .site-menu {
+            transform: translateX(100%);
+        }
+    }
+}
+
+
+/* IF TOGGLE MENU DISPLAY LOGO ON LEFT AND MENU ON RIGHT ON ALL SCREENS */
+.site-header:has(.toggle-menu) {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/*  PLACE SITE HEADER ON TOP OF HERO */
+.site-header.on-top-of-hero {
+
+        /* RENDER HEADER ON TOP OF HERO ON LARGE SCREENS */
+            position: absolute;
+            width: 100%;
+        
+        /*  SET SITE HEADER LINK COLOR ON LARGE SCREENS */
+        --color-siteheader-links: var(--color-hero-headings);
+        a {
+            color: var(--color-siteheader-links);
+        }
+        
+        /* ADD MORE SPACE ON TOP FOR ABSOLUTE HEADER */
+        & + .site-main > .hero {
+            padding-top: calc(4em + var(--unit-large));
+        }
+}
+
+
+/* SITE MAIN */
+.site-main {
+}
+
+/* SECTION */
+section {
+    padding: var(--unit-medium) var(--unit-small);
+}
+
+/* HERO SECTION */
+
+.hero {
+    background-color: var(--color-hero-background);
+    color: var (--color-hero-text);
+    padding: 0;
+    text-align: center;
+
+.bunny {
+    clip: rect(110px, 160px, 170px, 60px);
+
+}
+
+    /* SET HERO H1 TO BE JUMBO */
+    h1 {
+        font-size: 4em;
+    }
+
+    h1, h2, h3 {
+        color: var(--color-hero-headings);
+    }
+    /* ADD MORE SPACE TO TOP FOR ABSOLUTE HEADER */
+    /* padding-top: calc(4em + var(--unit-large)); */
+
+
+    p {
+        color: var(--color-hero-text);
+    }
+}
+
+/* SITE FOOTER */
+.site-footer {
+    background-color: var(--color-sitefooter-background);
+    color: var(--color-sitefooter-text);
+
+    /*  ADD SOME GENERAL PADDING AROUND THE FOOTER */
+    padding: var(--unit-small);
+
+    h1, h2, h3 {
+        color: var(--color-sitefooter-headings);
+    }
+
+    a {
+        color: var(--color-links-light);
+
+        &:hover {
+            color: var(--color-links-lighter);
+        }
+    }
+
+    .site-footer-nav {
+        ul {
+            margin: 0;
+            padding: 1em;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: var(--unit-small);
+        }
+    }
+}
+
+/* ---------UI COMPONENTS----------- */
+
+/* BUTTONS */
+
+.button {
+
+    /* SET THE BUTTON COLORS  */
+    border: 1px solid var(--color-links-dark);
+    background-color: var(--color-links-dark);
+    color: white;
+
+    /* ENABLE BOX NODEL STYLING */
+    display: inline-block;
+    padding: var(--unit-small);
+    margin: var(--unit-small) 0;
+
+    /* GET RID OF THE UNDERLINE */
+    text-decoration: none;
+
+    + .button {
+        margin-left: var(--unit-small);
+    }
+
+    &:hover {
+        color: #fff;
+        background-color: var(--color-links-darker);
+        border-color: var(--color-links-darker);
+    }
+
+
+    /* ADD LIGHT BUTTON VARIANT */
+    &.light {
+        border-color: var(--color-links-light);
+        background-color: var(--color-links-light);
+        color: var(--color-links-darker);
+
+        &:hover {
+            border-color: var(--color-links-lighter);
+            background-color: var(--color-liks-lighter);
+        }
+    }
+
+}
+
+
+/* SIMPLE CARD */
+.centered-card-group {
+
+    display: flex;
+    justify-content: left;
+    gap: var(--unit-small);
+    
+    .centered-card {
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        padding: var(--unit-small);
+        min-width: auto;
+    }
+}
+
+/* ---------ANIMATION----------- */
+
+/*  ENABLE NATIVE SMOOTH SCROOL */
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ONSCROLL TRIGGRED ANIMATION */
+.observe-me {
+    opacity: 0;
+    transition: all 3s ease-out .5s;
+
+    &[data-viewstate="active"] {
+        opacity: 1;
+    }
+}
+
+.animate-from-upperleft {
+    translate: -20px -20px;
+    &[data-viewstate="active"] {
+        translate: 0 0;
+    }
+}
+
+.animate-from-lowerright {
+    translate: 20px 20px;
+    &[data-viewstate="active"] {
+        translate: 0 0;
+    }
+}
+
+
+/* ---------CUSTOM STYLING----------- */
+
+
+/* CUSTOM COLOR SECTIONS */
+.bg-lightgrey {
+    background-color: #efefef;
+}
+
+
+/* STYLING */
+
+:root {
+    --info-card-width: 300px;
+    --info-card-height: 400px;
+    --card-border-radius: 10px;
+}
+
+.section-heading-centered {
+    text-align: center;
+}
+
+
+  /* SUB NAV */
+.sub-nav {
+    padding: 0;
+}
+
+.sub-nav nav {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: flex-end;
+
+
+    ul {
+        position: absolute;
+        margin-top: 25%;
+        list-style: none;
+    }
+
+    ul li {
+        margin-bottom: 5px;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+
+
+}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 400px;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+  /* This container is needed to position the front and back side */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card[data-flipstate="flipped"] .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+  /* Position the front and back side */
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+  /* Style the front side (fallback if image is missing) */
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+
+  /* Style the back side */
+.flip-card-back {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    transform: rotateY(180deg);
+}
+
+/* SECTION BG COLORS */
+
+.section-one {
+    background: #FFF8DE;
+    padding: 6em 0;
+    width: 100%;
+    text-align: center;
+
+    p { 
+        text-align: left;
+    }
+}
+
+.section-two {
+    background: #BBB8A1;
+}
+
+.section-three {
+    background: #767256;
+}
+
+.section-four {
+    background: #8FABB1;
+}
+
+.section-five {
+    background: #34494E;
+}
+
+
+
+
+/* HOVER CARD TEST */
+h2 {
+    margin: 8px 0px 12px 0px;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.fancy-card 
+{
+    font-family: Roboto, sans-serif;
+    width: 600px;
+    height: 800px;
+    border-radius: 5px;
+    box-shadow: 8px 14px 38px rgba(39,44,49,.06), 1px 3px 8px rgba(39,44,49,.03);
+    overflow: hidden; /* otherwise header image won't respect rounded corners */
+    background: white;
+    transform: translate(-50% -50%);
+    transition: all .5s ease; /* back to normal */
+}
+
+
+.fancy-card:hover {
+    transform: translate3D(0,-1px,0) scale(1.03); /* move up slightly and zoom in */
+    box-shadow: 8px 28px 50px rgba(39,44,49,.07), 1px 6px 12px rgba(39,44,49,.04);
+    transition: all .4s ease; /* zoom in */
+    cursor: pointer;
+}
+
+.card-image {
+    width: 100%; /* image maintain its aspect ratio; otherwise image stretches vertically */
+}
+
+.card-text {
+    padding: 20px 13px 10px 16px;
+}
+
+.tags {
+    color: #738a94;
+    font-size: 0.9rem;
+    line-height: 1em;
+    font-weight: 500;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+}
+
+.fancy-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.fancy-card[data-flipstate="flipped"] .fancy-card-inner {
+    transform: rotateY(180deg);
+}
+
+.fancy-card-front, .fancy-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+}
+
+
+.fancy-card-back {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    transform: rotateY(-180deg);
+
+}
+
+
+/* FLIP Card Test */
+
+
+.card-container {
+    display: flex; /* Use flexbox */
+    justify-content: space-between; /* Put space between the cards */
+    gap: 30px; /* Optional: Adds gap between the flip cards */
+    flex-wrap: wrap; /* Allow cards to wrap to the next line on smaller screens */
+    padding: 5em;
+}
+
+.flip-card {
+    width: 300px;
+    height: 400px;
+    cursor: pointer;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.flip-card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+
+
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-card-front img, .flip-card-back img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* Ensures images cover the whole area */
+}
+
+.flip-card-front {
+    background-color: #8FABB1; /* Can be removed if using images */
+}
+
+.flip-card-back {
+    background-color: #8FABB1; /* Can be removed if using images */
+    transform: rotateY(180deg);
+}
+
+
+
+
+
